@@ -13,12 +13,6 @@ var web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/N
 app.use(express.static(path.resolve(__dirname, './client/build')));
 app.use(bodyParser.json());
 
-let bal; 
-let assign = (value) => {
-    bal = value;
-    console.log(web3.utils.toWei(bal, 'wei'));
-};
-
 app.post('/account', async (req, res) =>{    
     let accountNumber = req.body.account_number;
     if (!web3.utils.isAddress(accountNumber)){
@@ -65,10 +59,3 @@ app.get('*', (req, res) => {
 app.listen(5000);
 
 
-// const balance = await web3.eth.getBalance(req.query.account );
-// let numBalance = parseInt(balance, 10);
-// numBalance /= 1000000000000000000;
-// res.status(200).send(""+numBalance);
-// } catch(e){
-//     console.log(e);
-// }

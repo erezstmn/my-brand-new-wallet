@@ -6,15 +6,14 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
 .App-header {
-  background-color: rgb(82, 79, 79);
+  background-color: #3b3a36;
   height: 150px;
   padding: 3px;
   color: white;
   text-align: center;
+  margin-bottom: 30px;
 }
-
 .App-title {
   font-size: 1.5em;
 }
@@ -29,4 +28,31 @@
 form {
   padding: 0 30%;
   text-align: center;
+  margin: 10px;
 }
+fieldset {
+  color: black;
+}
+button {
+  background: #c0dfd9;
+  background-image: -webkit-linear-gradient(top, #c0dfd9, #c0dfd9);
+  background-image: -moz-linear-gradient(top, #c0dfd9, #c0dfd9);
+  background-image: -ms-linear-gradient(top, #c0dfd9, #c0dfd9);
+  background-image: -o-linear-gradient(top, #c0dfd9, #c0dfd9);
+  background-image: linear-gradient(to bottom, #c0dfd9, #c0dfd9);
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 14px;
+  padding: 3px 3px 3px 3px;
+  text-decoration: none;
+}
+button:hover {
+  background: #c0dfd9;
+  text-decoration: none;
+}
+
+
+

@@ -78,7 +78,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div>    
         <header className="App-header">
           <h1>My Ethereum Wallet</h1>
           <h3>Powered by Infura & Rinkeby</h3>
@@ -98,7 +98,7 @@ class App extends Component {
           <p>{this.state.accountNumberToShow ? `This is the fetched account:  ${this.state.accountNumberToShow}`:''}</p>
           <button onClick={this.handleGetBalance}>Get Balance</button><br/>
           <p>{ this.state.currentBalance ? `This is The balance: ${this.state.currentBalance}` : ''}
-          </p>
+          </p>          
         </fieldset>
 </form>
       </div>
